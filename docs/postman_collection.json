@@ -1,0 +1,525 @@
+{
+	"info": {
+		"_postman_id": "484b8cb6-85bf-4132-97f3-23579f48af8b",
+		"name": "api-m77-raspberry-wifi-node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4321493"
+	},
+	"item": [
+		{
+			"name": "/api/wifi/list_interfaces",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/list_interfaces",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"list_interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/wifi/status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/status",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"status"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/wifi/has_connection",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/has_connection",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"has_connection"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/wifi/saved_networks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/saved_networks",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"saved_networks"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/wifi/remove_all_networks",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/remove_all_networks",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"remove_all_networks"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/wifi/scan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/scan",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"scan"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/wifi/scan_in_types",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/scan_in_types",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"scan_in_types"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/wifi/connect",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ssid\": \"mangos77\",\n    \"psk\": \"asdfasd3322Fs\",\n    \"removeAllNetworks\": false,\n    \"hidden\": false\n}"
+				},
+				"url": {
+					"raw": "{{host}}/api/wifi/connect",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"connect"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/wifi/disconnect",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/disconnect",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"disconnect"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/wifi/reconnect",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/reconnect",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"reconnect"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:8081",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "api-m77-raspberry-wifi-node",
+  "version": "1.0.0",
+  "description": "API to interact with the functionality of the m77-raspberry-wifi-node module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "PORT=8081 NODE_ENV=development node src/index",
+    "start": "PORT=8080 NODE_ENV=production node src/index"
+  },
+  "keywords": [
+    "wifi",
+    "wifi connection",
+    "wpa_cli",
+    "wpa_supplicant",
+    "raspberry",
+    "raspberry Pi",
+    "node",
+    "nodejs",
+    "node.js",
+    "rpi",
+    "raspi",
+    "linux",
+    "m77-raspberry-wifi-node"
+  ],
+  "author": "Ing. Carlos Yerena - mangos77",
+  "homepage": "https://github.com/mangos77/api-m77-raspberry-wifi-node",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mangos77/api-m77-raspberry-wifi-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mangos77/api-m77-raspberry-wifi-node/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "m77-raspberry-wifi-node": "*"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}

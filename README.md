@@ -114,16 +114,16 @@ Know if the interface has a connection to a Wi-Fi network or not
 ### GET /api/wifi/saved_networks
 List of saved Wi-Fi networks
 
-## DELETE /api/wifi/remove_all_networks
+### DELETE /api/wifi/remove_all_networks
 Delete all saved networks
 
-## GET /api/wifi/scan
+### GET /api/wifi/scan
 List of all Wi-Fi networks available within reach of the device
 
-## GET scan_in_types
+### GET scan_in_types
 List of all Wi-Fi networks available within reach of the device **organized by type of connection**
 
-## POST /api/wifi/connect
+### POST /api/wifi/connect
 Establish connection to a Wi-Fi network
 - Requires sending data in the request body:
 ```
@@ -137,10 +137,10 @@ Establish connection to a Wi-Fi network
 ***More details of these parameters in the connect() method of [**m77-raspberry-wifi-node**](https://github.com/mangos77/m77-raspberry-wifi-node)***
 
 
-## PUT /api/wifi/disconnect
+### PUT /api/wifi/disconnect
 Disconnect the Wi-Fi from the device
 
-## PUT /api/wifi/reconnect
+### PUT /api/wifi/reconnect
 Try to reconnect to one of the saved Wi-Fi networks
 
 # Extra information

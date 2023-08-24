@@ -112,13 +112,13 @@ Listado de las redes Wifi guardadas
 ## DELETE /api/wifi/remove_all_networks
 Elimina todos las redes guardadas
 
-## GET /api/wifi/scan
+### GET /api/wifi/scan
 Listado de todas las redes Wifi disponibles al alcance del dispositivo
 
-## GET scan_in_types
+### GET scan_in_types
 Listado de todas las redes Wifi disponibles al alcance del dispositivo **organizadas por tipo de conexión**
 
-## POST /api/wifi/connect
+### POST /api/wifi/connect
 Establece conexión con una red Wifi
 - Requiere envío de datos en el body de la petición:
 ```
@@ -132,10 +132,10 @@ Establece conexión con una red Wifi
 ***Más detalles de estos parámetros en en método connect() de [**m77-raspberry-wifi-node**](https://github.com/mangos77/m77-raspberry-wifi-node)***
 
 
-## PUT /api/wifi/disconnect
+### PUT /api/wifi/disconnect
 Desconecta la Wifi del dispositivo
 
-## PUT /api/wifi/reconnect
+### PUT /api/wifi/reconnect
 Intenta reconectar a una de las redes Wifi guardadas
 
 

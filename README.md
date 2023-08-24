@@ -20,7 +20,7 @@ I hope you find it very useful and recommend it so that it reaches more develope
 ## Install
 From git
 ```
-git clone https://github.com/mangos77/api-m77-raspberry-wifi-node
+git clone https://github.com/mangos77/api-m77-raspberry-wifi-node.git
 cd api-m77-raspberry-wifi-node
 npm install
 ```

@@ -15,7 +15,7 @@ Espero que les sea de gran utilidad y la recomienden para que llegue a más desa
 ## Instalar
 Desde git
 ```
-git clone https://github.com/mangos77/api-m77-raspberry-wifi-node
+git clone https://github.com/mangos77/api-m77-raspberry-wifi-node.git
 cd api-m77-raspberry-wifi-node
 npm install
 ```

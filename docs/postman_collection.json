@@ -350,7 +350,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"ssid\": \"mangos77\",\n    \"psk\": \"asdfasd3322Fs\",\n    \"removeAllNetworks\": false,\n    \"hidden\": false\n}"
+					"raw": "{\n    \"ssid\": \"mangos77\",\n    \"psk\": \"asdfasd3322Fs\",\n    \"bssid\": \"\",\n    \"removeAllNetworks\": false,\n    \"hidden\": false\n}"
 				},
 				"url": {
 					"raw": "{{host}}/api/wifi/connect",

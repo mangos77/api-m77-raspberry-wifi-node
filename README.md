@@ -91,6 +91,10 @@ In the docs folder you will find two files:
 
 
 ## Endpoints
+In order to understand all the responses of each endpoint, it can be of great help to see the documentation of the module on which this api is based [**m77-raspberry-wifi-node**](https://github.com/mangos77/m77-raspberry-wifi-node)
+
+___
+
 The available endpoints are:
 
 ### GET /api/wifi/list_interfaces
@@ -130,10 +134,18 @@ Establish connection to a Wi-Fi network
 {
     "ssid": "mangos77",
     "psk": "asdfasd3322Fs",
+    "bssid": "",
     "removeAllNetworks": false,
     "hidden": false
 }
 ```
+- *ssid* - The ssid of the network you want to connect to
+- *psk* - Network password. **Empty string if it is an open network**
+- *bssid* - (Optional) It is used to fix the connection to a bssid of the ssid, one of its uses is when the same ssid is multi-band and you need to connect to a specific one
+- *removeAllNetworks* - (Optional) In case you want to remove all saved networks before configuring the new connection
+- *hidden* - (Optional) Define if it is a hidden network
+
+
 ***More details of these parameters in the connect() method of [**m77-raspberry-wifi-node**](https://github.com/mangos77/m77-raspberry-wifi-node)***
 
 

@@ -86,6 +86,10 @@ En la carpeta docs encontrarás dos archivos:
 
 
 ## Endpoints
+Para poder comprender todas las respuestas de cada endpoint puede ser de gran ayuda ver la documentación del módulo en el que está basada esta api [**m77-raspberry-wifi-node**](https://github.com/mangos77/m77-raspberry-wifi-node)
+
+___
+
 Los endpoints disponibles son:
 
 ### GET /api/wifi/list_interfaces
@@ -109,7 +113,7 @@ Conocer si la interfaz tiene o no conexión a una red Wifi
 ### GET /api/wifi/saved_networks
 Listado de las redes Wifi guardadas
 
-## DELETE /api/wifi/remove_all_networks
+### DELETE /api/wifi/remove_all_networks
 Elimina todos las redes guardadas
 
 ### GET /api/wifi/scan
@@ -125,10 +129,18 @@ Establece conexión con una red Wifi
 {
     "ssid": "mangos77",
     "psk": "asdfasd3322Fs",
+    "bssid": "",
     "removeAllNetworks": false,
     "hidden": false
 }
 ```
+- *ssid* - El ssid de la red a la que se quiera conectar
+- *psk* - Contraseña de la red. **Cadena vacía si se trata de una red abierta**
+- *bssid* - (Opcional) Se usa para fijar la conexión a un bssid del ssid, uno de sus usos es cuando el mismo ssid es multi banda y se necesite conectar a una en específico
+- *removeAllNetworks* - (Opcional) En el caso que se quiera eliminar todas las redes guardadas antes de configurar la nueva conexión
+- *hidden* - (Opcional) Definir si se trata de una red oculta
+
+
 ***Más detalles de estos parámetros en en método connect() de [**m77-raspberry-wifi-node**](https://github.com/mangos77/m77-raspberry-wifi-node)***
 
 

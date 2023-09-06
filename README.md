@@ -124,6 +124,9 @@ Delete all saved networks
 ### GET /api/wifi/scan
 List of all Wi-Fi networks available within reach of the device
 
+### GET /api/wifi/scan_uniques
+Delivery list of unique Wi-Fi networks (ssid and frequency)
+
 ### GET scan_in_types
 List of all Wi-Fi networks available within reach of the device **organized by type of connection**
 

@@ -287,6 +287,57 @@
 			"response": []
 		},
 		{
+			"name": "/api/wifi/scan_uniques",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/wifi/scan_uniques",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"wifi",
+						"scan_uniques"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "wlan0",
+							"description": "by default wlan0",
+							"disabled": true
+						},
+						{
+							"key": "debugLevel",
+							"value": "0",
+							"description": "by default 2",
+							"disabled": true
+						},
+						{
+							"key": "scan_timeout",
+							"value": "15000",
+							"description": "by default 15000",
+							"disabled": true
+						},
+						{
+							"key": "connect_timeout",
+							"value": "45000",
+							"description": "by default 45000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/api/wifi/scan_in_types",
 			"request": {
 				"method": "GET",

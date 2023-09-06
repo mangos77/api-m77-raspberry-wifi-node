@@ -119,6 +119,9 @@ Elimina todos las redes guardadas
 ### GET /api/wifi/scan
 Listado de todas las redes Wifi disponibles al alcance del dispositivo
 
+### GET /api/wifi/scan_uniques
+Entrega listado de redes Wifi unicas (ssid y frecuencia)
+
 ### GET scan_in_types
 Listado de todas las redes Wifi disponibles al alcance del dispositivo **organizadas por tipo de conexión**
 

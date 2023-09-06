@@ -37,8 +37,11 @@ router.delete('/remove_all_networks', md_options, controller.removeAllNetworks)
 // List of all available networks
 router.get('/scan', md_options, controller.scan)
 
-// List of available networks separated by frequency group
+// List of available unique networks 
 router.get('/scan_in_types', md_options, controller.scanInTypes)
+
+// List of available networks separated by frequency group
+router.get('/scan_uniques', md_options, controller.scanUniques)
 
 // Connect to network
 router.post('/connect', md_options, controller.connect)

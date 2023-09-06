@@ -47,6 +47,11 @@ class Controller {
         res.json(result)
     }
 
+    scanUniques = async (req, res) => {
+        const result = await this.#wifi.scanUniques()
+        res.json(result)
+    }
+
     scanInTypes = async (req, res) => {
         const result = await this.#wifi.scanInTypes()
         res.json(result)

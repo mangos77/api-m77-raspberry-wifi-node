@@ -1,3 +1,6 @@
+> ** Depreciado: En las versiones actuales de Raspberry OS ya no se usa wpa_cli, en su lugar se usa nmcli. Favor de utilizar el paquete [**api-m77-raspberry-wifi-node-nmcli**](https://github.com/mangos77/api-m77-raspberry-wifi-node-nmcli)
+___
+
 # api-m77-raspberry-wifi-node
 
 Servidor **node.js** con **express** que crea una API con las funcionalidades del módulo [**m77-raspberry-wifi-node**](https://github.com/mangos77/m77-raspberry-wifi-node) que desarrollé anteriormente en el que se puede configurar la red Wifi de **Raspberry Pi** que usa **wpa_cli** de **wpa_supplicant**.
